@@ -5,6 +5,9 @@
 	--contact-text-color-theme-light: #757575;
 	--contact-text-color-theme-dark: rgba(255, 255, 255, 0.6);
 	--btn-back-color: #2196f3;
+	--inactive-btn-back-color: #f5f4fa;
+	--main-text-color: #212121;
+	--subtitle-text-color: #757575;
 }
 .list {
 	list-style: none;
@@ -14,6 +17,7 @@
 }
 body {
 	font-family: var(--primary-font-family);
+	color: var(--main-text-color);
 }
 
 /*===============COMPONENTS===============*/
@@ -43,6 +47,7 @@ body {
 	color: #ffffff;
 
 	background: var(--btn-back-color);
+	cursor: pointer;
 }
 
 .modal-btn:hover,
@@ -58,9 +63,9 @@ body {
 	text-align: center;
 	letter-spacing: 0.03em;
 
-	color: #212121;
-	background: #f5f4fa;
+	background: var(--inactive-btn-back-color);
 	border-radius: 4px;
+	cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -91,8 +96,6 @@ body {
 	font-size: 14px;
 	line-height: 1, 14;
 	letter-spacing: 0.02em;
-
-	color: #212121;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -137,8 +140,6 @@ body {
 	line-height: 16px;
 	letter-spacing: 1, 14;
 	text-transform: uppercase;
-
-	color: #212121;
 }
 .feature-description {
 	font-family: 'Roboto';
@@ -150,7 +151,7 @@ body {
 	/* or 171% */
 	letter-spacing: 0.03em;
 
-	color: #757575;
+	color: var(--subtitle-text-color);
 }
 .section-title {
 	font-weight: 700;
@@ -158,8 +159,6 @@ body {
 	line-height: 1, 16;
 	text-align: center;
 	letter-spacing: 0.03em;
-
-	color: #212121;
 }
 .employee-name {
 	font-weight: 500;
@@ -169,11 +168,8 @@ body {
 	/* identical to box height */
 	text-align: center;
 	letter-spacing: 0.03em;
-
-	color: #212121;
 }
 .employee-position {
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 1, 18;
 
@@ -181,7 +177,7 @@ body {
 	text-align: center;
 	letter-spacing: 0.03em;
 
-	color: #757575;
+	color: var(--subtitle-text-color);
 }
 .product-title {
 	font-weight: 700;
@@ -190,18 +186,17 @@ body {
 
 	/* identical to box height, or 200% */
 	letter-spacing: 0.06em;
-
-	color: #212121;
 }
 .filter-description {
 	font-weight: 400;
+	/* так как это пешка я не стал убирать фонт вейт*/
 	font-size: 16px;
 	line-height: 1, 88;
 
 	/* identical to box height, or 188% */
 	letter-spacing: 0.03em;
 
-	color: #757575;
+	color: var(--subtitle-text-color);
 }
 /*===============/MAIN===============*/
 
@@ -217,6 +212,7 @@ body {
 	color: #ffffff;
 }
 .contacts-footer {
+	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1, 71;
@@ -225,5 +221,9 @@ body {
 	letter-spacing: 0.03em;
 
 	color: var(--contact-text-color-theme-dark);
+}
+.contacts-footer:hover,
+.contacts-footer:focus {
+	color: var(--accent-color);
 }
 /*===============/FOOTER===============*/
