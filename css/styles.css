@@ -4,6 +4,7 @@
 	--accent-color: #2196f3;
 	--contact-text-color-theme-light: #757575;
 	--contact-text-color-theme-dark: rgba(255, 255, 255, 0.6);
+	--btn-back-color: #2196f3;
 }
 .list {
 	list-style: none;
@@ -24,10 +25,10 @@ body {
 	line-height: 1, 19;
 	letter-spacing: 0.03em;
 
-	color: #2196f3;
-}
-.logo-word {
 	color: #000000;
+}
+.logo-blue {
+	color: #2196f3;
 }
 .modal-btn {
 	font-weight: 700;
@@ -41,12 +42,45 @@ body {
 
 	color: #ffffff;
 
-	background: #2196f3;
+	background: var(--btn-back-color);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-	background-color: #2196f3;
+	background-color: var(--btn-back-color);
+}
+.filter-btn {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1, 62;
+
+	/* identical to box height, or 162% */
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #212121;
+	background: #f5f4fa;
+	border-radius: 4px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1, 62;
+
+	/* identical to box height, or 162% */
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #ffffff;
+	background: var(--btn-back-color);
+
+	/* shadow-middle */
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+.menu-link:active {
+	color: var(--accent-color);
 }
 /*===============/COMPONENTS===============*/
 
@@ -76,7 +110,10 @@ body {
 .contacts-header:focus {
 	color: var(--accent-color);
 }
-
+.current-studio,
+.current-portfolio {
+	color: var(--accent-color);
+}
 /*===============/HEADER===============*/
 
 /*===============HERO===============*/
@@ -146,11 +183,29 @@ body {
 
 	color: #757575;
 }
+.product-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+
+	/* identical to box height, or 200% */
+	letter-spacing: 0.06em;
+
+	color: #212121;
+}
+.filter-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1, 88;
+
+	/* identical to box height, or 188% */
+	letter-spacing: 0.03em;
+
+	color: #757575;
+}
 /*===============/MAIN===============*/
 
 /*===============FOOTER===============*/
-
-/*===============/FOOTER===============*/
 .geo-link {
 	font-weight: 400;
 	font-size: 14px;
@@ -171,3 +226,4 @@ body {
 
 	color: var(--contact-text-color-theme-dark);
 }
+/*===============/FOOTER===============*/
