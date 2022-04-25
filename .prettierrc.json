@@ -15,5 +15,6 @@
 	"trailingComma": "all",
 	"useTabs": true,
 	"vueIndentScriptAndStyle": false,
-	"singleAttributePerLine": false
+	"singleAttributePerLine": false,
+	"margin": 0
 }
