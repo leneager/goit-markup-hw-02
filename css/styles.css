@@ -1,229 +1,236 @@
 :root {
-	--primary-font-family: 'Robobto', sans-serif;
-	--secondary-font-family: 'Raleway', sans-serif;
-	--accent-color: #2196f3;
-	--contact-text-color-theme-light: #757575;
-	--contact-text-color-theme-dark: rgba(255, 255, 255, 0.6);
-	--btn-back-color: #2196f3;
-	--inactive-btn-back-color: #f5f4fa;
-	--main-text-color: #212121;
-	--subtitle-text-color: #757575;
+  --primary-font-family: 'Robobto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+  --accent-color: #2196f3;
+  --contact-text-color-theme-light: #757575;
+  --contact-text-color-theme-dark: rgba(255, 255, 255, 0.6);
+  --btn-back-color: #2196f3;
+  --inactive-btn-back-color: #f5f4fa;
+  --main-text-color: #212121;
+  --subtitle-text-color: #757575;
 }
 .list {
-	list-style: none;
+  list-style: none;
 }
 .link {
-	text-decoration: none;
+  text-decoration: none;
 }
 body {
-	font-family: var(--primary-font-family);
-	color: var(--main-text-color);
+  font-family: var(--primary-font-family);
+  color: var(--main-text-color);
 }
 
 /*===============COMPONENTS===============*/
 
 .logo {
-	font-family: var(--secondary-font-family);
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1, 19;
-	letter-spacing: 0.03em;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
 
-	color: #000000;
+  color: #000000;
 }
 .logo-blue {
-	color: #2196f3;
+  color: #2196f3;
 }
 .modal-btn {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1, 88;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 88;
 
-	display: flex;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-	color: #ffffff;
+  color: #ffffff;
 
-	background: var(--btn-back-color);
-	cursor: pointer;
+  background: var(--btn-back-color);
+  cursor: pointer;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-	background-color: var(--btn-back-color);
+  background-color: var(--btn-back-color);
 }
 .filter-btn {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1, 62;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 62;
 
-	/* identical to box height, or 162% */
-	text-align: center;
-	letter-spacing: 0.03em;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
 
-	background: var(--inactive-btn-back-color);
-	border-radius: 4px;
-	cursor: pointer;
+  background: var(--inactive-btn-back-color);
+  border-radius: 4px;
+  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1, 62;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 62;
 
-	/* identical to box height, or 162% */
-	text-align: center;
-	letter-spacing: 0.03em;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
 
-	color: #ffffff;
-	background: var(--btn-back-color);
+  color: #ffffff;
+  background: var(--btn-back-color);
 
-	/* shadow-middle */
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	border-radius: 4px;
+  /* shadow-middle */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .menu-link:active {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 /*===============/COMPONENTS===============*/
 
 /*===============HEADER===============*/
 .menu-link {
-	font-family: var(--primary-font-family);
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1, 14;
-	letter-spacing: 0.02em;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
 }
 .menu-link:hover,
 .menu-link:focus {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 .contacts-header {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1, 14;
-	letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
 
-	color: var(--contact-text-color-theme-light);
+  color: var(--contact-text-color-theme-light);
 }
 .contacts-header:hover,
 .contacts-header:focus {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 .current-studio,
 .current-portfolio {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 /*===============/HEADER===============*/
 
 /*===============HERO===============*/
 .hero-title {
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1, 36;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36;
 
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-	color: #ffffff;
+  color: #ffffff;
+}
+.hero-section {
+  background: #2f303a;
 }
 /*===============/HERO===============*/
 
 /*===============MAIN===============*/
 .feature-title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 1, 14;
-	text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1, 14;
+  text-transform: uppercase;
 }
 .feature-description {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1, 71;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
 
-	/* or 171% */
-	letter-spacing: 0.03em;
+  /* or 171% */
+  letter-spacing: 0.03em;
 
-	color: var(--subtitle-text-color);
+  color: var(--subtitle-text-color);
 }
 .section-title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1, 16;
-	text-align: center;
-	letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .employee-name {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1, 18;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 18;
 
-	/* identical to box height */
-	text-align: center;
-	letter-spacing: 0.03em;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .employee-position {
-	font-size: 16px;
-	line-height: 1, 18;
+  font-size: 16px;
+  line-height: 1, 18;
 
-	/* identical to box height */
-	text-align: center;
-	letter-spacing: 0.03em;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
 
-	color: var(--subtitle-text-color);
+  color: var(--subtitle-text-color);
 }
 .product-title {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 
-	/* identical to box height, or 200% */
-	letter-spacing: 0.06em;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
 }
 .filter-description {
-	font-weight: 400;
-	/* так как это пешка я не стал убирать фонт вейт*/
-	font-size: 16px;
-	line-height: 1, 88;
+  font-weight: 400;
+  /* так как это пешка я не стал убирать фонт вейт*/
+  font-size: 16px;
+  line-height: 1, 88;
 
-	/* identical to box height, or 188% */
-	letter-spacing: 0.03em;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
 
-	color: var(--subtitle-text-color);
+  color: var(--subtitle-text-color);
 }
 /*===============/MAIN===============*/
 
 /*===============FOOTER===============*/
 .geo-link {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1, 71;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
 
-	/* or 171% */
-	letter-spacing: 0.03em;
+  /* or 171% */
+  letter-spacing: 0.03em;
 
-	color: #ffffff;
+  color: #ffffff;
 }
 .contacts-footer {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1, 71;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
 
-	/* or 171% */
-	letter-spacing: 0.03em;
+  /* or 171% */
+  letter-spacing: 0.03em;
 
-	color: var(--contact-text-color-theme-dark);
+  color: var(--contact-text-color-theme-dark);
 }
 .contacts-footer:hover,
 .contacts-footer:focus {
-	color: var(--accent-color);
+  color: var(--accent-color);
+}
+.site-footer {
+  background: #2f303a;
 }
 /*===============/FOOTER===============*/
