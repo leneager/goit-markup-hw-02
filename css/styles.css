@@ -8,6 +8,7 @@
   --inactive-btn-back-color: #f5f4fa;
   --main-text-color: #212121;
   --subtitle-text-color: #757575;
+  --logo-footer-color: #ffffff;
 }
 .list {
   list-style: none;
@@ -33,6 +34,9 @@ body {
 }
 .logo-blue {
   color: #2196f3;
+}
+.logo-footer {
+  color: var(--logo-footer-color);
 }
 .modal-btn {
   font-weight: 700;
@@ -97,6 +101,7 @@ body {
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -141,7 +146,7 @@ body {
 .feature-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1, 14;
   letter-spacing: 1, 14;
   text-transform: uppercase;
 }
